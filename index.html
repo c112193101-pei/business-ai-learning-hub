@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="zh-Hant">
 <head>
@@ -8,11 +9,15 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
   <header class="site-header">
     <a class="brand" href="index.html" aria-label="回到首頁">
       <span class="brand-mark">✦</span>
-      <span>學習補給站<small>BUSINESS & AI LEARNING HUB</small></span>
+      <span>學習補給站
+        <small>BUSINESS & AI LEARNING HUB</small>
+      </span>
     </a>
+
     <nav aria-label="主要導覽">
       <a class="active" href="#home">首頁</a>
       <a href="#topics">知識分類</a>
@@ -22,59 +27,276 @@
   </header>
 
   <main>
+
+    <!-- 首頁主視覺 -->
     <section class="hero" id="home">
       <div class="hero-copy">
         <span class="eyebrow">MY KNOWLEDGE SPACE</span>
-        <h1>把學過的知識，<br><em>整理成自己的能力。</em></h1>
-        <p>從 AI 工具到資料庫應用，將課堂重點與實作筆記整理在一起，讓每一次學習都能累積。</p>
-        <a class="primary-btn" href="#articles">開始探索 <span>→</span></a>
+
+        <h1>
+          把學過的知識，<br>
+          <em>整理成自己的能力。</em>
+        </h1>
+
+        <p>
+          從 AI 工具到資料庫應用，將課堂重點與實作筆記整理在一起，讓每一次學習都能累積。
+        </p>
+
+        <a class="primary-btn" href="#articles">
+          開始探索 <span>→</span>
+        </a>
       </div>
+
       <div class="hero-art" aria-label="學習知識插畫" role="img">
-        <div class="sun"></div><div class="book book-back"></div><div class="book book-front"></div>
-        <div class="spark spark-one">✦</div><div class="spark spark-two">✧</div>
-        <div class="art-note">learn<br>something<br>new ♡</div>
+        <div class="sun"></div>
+        <div class="book book-back"></div>
+        <div class="book book-front"></div>
+        <div class="spark spark-one">✦</div>
+        <div class="spark spark-two">✧</div>
+        <div class="art-note">
+          learn<br>
+          something<br>
+          new ♡
+        </div>
       </div>
     </section>
 
+    <!-- 搜尋區 -->
     <section class="search-section" aria-label="搜尋文章">
-      <div><span class="section-kicker">FIND YOUR NOTES</span><h2>今天想學點什麼？</h2></div>
-      <label class="search-box"><span>⌕</span><input id="searchInput" type="search" placeholder="搜尋 AI、GitHub、資料庫..." aria-label="搜尋文章"><kbd>搜尋</kbd></label>
+      <div>
+        <span class="section-kicker">FIND YOUR NOTES</span>
+        <h2>今天想學點什麼？</h2>
+      </div>
+
+      <label class="search-box">
+        <span>⌕</span>
+        <input
+          id="searchInput"
+          type="search"
+          placeholder="搜尋 AI、GitHub、資料庫..."
+          aria-label="搜尋文章"
+        >
+        <kbd>搜尋</kbd>
+      </label>
     </section>
 
+    <!-- 知識分類 -->
     <section class="section" id="topics">
-      <div class="section-heading"><div><span class="section-kicker">EXPLORE TOPICS</span><h2>知識分類</h2></div><p>依照主題找到需要的學習內容</p></div>
+
+      <div class="section-heading">
+        <div>
+          <span class="section-kicker">EXPLORE TOPICS</span>
+          <h2>知識分類</h2>
+        </div>
+        <p>依照主題找到需要的學習內容</p>
+      </div>
+
       <div class="topic-grid">
-        <button class="topic-card" data-category="AI 人工智慧"><span class="topic-icon lavender">✧</span><strong>AI 人工智慧</strong><small>認識 GenAI、LLM 與 Prompt</small><span class="topic-arrow">↗</span></button>
-        <button class="topic-card" data-category="Vibe Coding"><span class="topic-icon peach">⌘</span><strong>Vibe Coding</strong><small>用 AI 協助規劃與開發</small><span class="topic-arrow">↗</span></button>
-        <button class="topic-card" data-category="開發工具"><span class="topic-icon mint">⌁</span><strong>開發工具</strong><small>GitHub、VS Code 入門</small><span class="topic-arrow">↗</span></button>
-        <button class="topic-card" data-category="資料庫"><span class="topic-icon yellow">▤</span><strong>資料庫</strong><small>SQL 與資料管理概念</small><span class="topic-arrow">↗</span></button>
+
+        <button class="topic-card" data-category="AI 人工智慧">
+          <span class="topic-icon lavender">✧</span>
+          <strong>AI 人工智慧</strong>
+          <small>認識 GenAI、LLM 與 Prompt</small>
+          <span class="topic-arrow">↗</span>
+        </button>
+
+        <button class="topic-card" data-category="Vibe Coding">
+          <span class="topic-icon peach">⌘</span>
+          <strong>Vibe Coding</strong>
+          <small>用 AI 協助規劃與開發</small>
+          <span class="topic-arrow">↗</span>
+        </button>
+
+        <button class="topic-card" data-category="開發工具">
+          <span class="topic-icon mint">⌁</span>
+          <strong>開發工具</strong>
+          <small>GitHub、VS Code 入門</small>
+          <span class="topic-arrow">↗</span>
+        </button>
+
+        <button class="topic-card" data-category="資料庫">
+          <span class="topic-icon yellow">▤</span>
+          <strong>資料庫</strong>
+          <small>SQL 與資料管理概念</small>
+          <span class="topic-arrow">↗</span>
+        </button>
+
       </div>
     </section>
 
+    <!-- 學習文章 -->
     <section class="section articles-section" id="articles">
-      <div class="section-heading"><div><span class="section-kicker">LATEST NOTES</span><h2>學習文章</h2></div><button class="text-btn" id="clearFilter">顯示全部文章 ↗</button></div>
-      <p class="results-note" id="resultsNote" aria-live="polite">精選入門內容，從基礎開始累積。</p>
-      <div class="article-grid" id="articleGrid">
-        <article class="article-card" data-category="AI 人工智慧" data-search="GenAI 生成式人工智慧 文字 圖片">
-          <div class="article-top ai-bg"><span>AI 入門</span><b>✦</b></div><div class="article-body"><div class="meta">AI 人工智慧 ・ 5 分鐘</div><h3>GenAI 是什麼？</h3><p>認識生成式人工智慧的基本概念，以及它如何協助我們創作文字、圖片與程式。</p><a href="pages/genai.html">閱讀文章 <span>→</span></a></div>
-        </article>
-        <article class="article-card" data-category="Vibe Coding" data-search="Vibe Coding AI 程式 開發">
-          <div class="article-top vibe-bg"><span>開發新方式</span><b>⌘</b></div><div class="article-body"><div class="meta">Vibe Coding ・ 6 分鐘</div><h3>什麼是 Vibe Coding？</h3><p>了解如何用自然語言描述需求，讓 AI 協助產生、修改與檢查程式。</p><a href="pages/vibe-coding.html">閱讀文章 <span>→</span></a></div>
-        </article>
-        <article class="article-card" data-category="開發工具" data-search="GitHub Pages 網站 部署 Repository">
-          <div class="article-top github-bg"><span>網站發布</span><b>↗</b></div><div class="article-body"><div class="meta">開發工具 ・ 7 分鐘</div><h3>GitHub Pages 入門</h3><p>將靜態網站放上 GitHub，並透過 GitHub Pages 分享給其他人瀏覽。</p><a href="pages/github-pages.html">閱讀文章 <span>→</span></a></div>
-        </article>
-        <article class="article-card" data-category="資料庫" data-search="資料庫 SQL 資料表 查詢">
-          <div class="article-top db-bg"><span>資料管理</span><b>▤</b></div><div class="article-body"><div class="meta">資料庫 ・ 5 分鐘</div><h3>資料庫與 SQL 基礎</h3><p>從資料表、欄位與紀錄開始，認識 SQL 如何新增、查詢與管理資料。</p><a href="pages/database.html">閱讀文章 <span>→</span></a></div>
-        </article>
+
+      <div class="section-heading">
+        <div>
+          <span class="section-kicker">LATEST NOTES</span>
+          <h2>學習文章</h2>
+        </div>
+
+        <button class="text-btn" id="clearFilter">
+          顯示全部文章 ↗
+        </button>
       </div>
-      <div class="empty-state" id="emptyState" hidden>找不到符合的文章，試試其他關鍵字吧！</div>
+
+      <p class="results-note" id="resultsNote" aria-live="polite">
+        精選入門內容，從基礎開始累積。
+      </p>
+
+      <div class="article-grid" id="articleGrid">
+
+        <!-- 第一篇：GenAI -->
+        <article
+          class="article-card"
+          data-category="AI 人工智慧"
+          data-search="GenAI 生成式人工智慧 文字 圖片"
+        >
+          <div class="article-top ai-bg">
+            <span>AI 入門</span>
+            <b>✦</b>
+          </div>
+
+          <div class="article-body">
+            <div class="meta">AI 人工智慧 ・ 5 分鐘</div>
+
+            <h3>GenAI 是什麼？</h3>
+
+            <p>
+              認識生成式人工智慧的基本概念，以及它如何協助我們創作文字、圖片與程式。
+            </p>
+
+            <a href="genai.html">
+              閱讀文章 <span>→</span>
+            </a>
+          </div>
+        </article>
+
+        <!-- 第二篇：Vibe Coding -->
+        <article
+          class="article-card"
+          data-category="Vibe Coding"
+          data-search="Vibe Coding AI 程式 開發"
+        >
+          <div class="article-top vibe-bg">
+            <span>開發新方式</span>
+            <b>⌘</b>
+          </div>
+
+          <div class="article-body">
+            <div class="meta">Vibe Coding ・ 6 分鐘</div>
+
+            <h3>什麼是 Vibe Coding？</h3>
+
+            <p>
+              了解如何用自然語言描述需求，讓 AI 協助產生、修改與檢查程式。
+            </p>
+
+            <a href="vibe-coding.html">
+              閱讀文章 <span>→</span>
+            </a>
+          </div>
+        </article>
+
+        <!-- 第三篇：GitHub Pages -->
+        <article
+          class="article-card"
+          data-category="開發工具"
+          data-search="GitHub Pages 網站 部署 Repository"
+        >
+          <div class="article-top github-bg">
+            <span>網站發布</span>
+            <b>↗</b>
+          </div>
+
+          <div class="article-body">
+            <div class="meta">開發工具 ・ 7 分鐘</div>
+
+            <h3>GitHub Pages 入門</h3>
+
+            <p>
+              將靜態網站放上 GitHub，並透過 GitHub Pages 分享給其他人瀏覽。
+            </p>
+
+            <a href="github-pages.html">
+              閱讀文章 <span>→</span>
+            </a>
+          </div>
+        </article>
+
+        <!-- 第四篇：資料庫 -->
+        <article
+          class="article-card"
+          data-category="資料庫"
+          data-search="資料庫 SQL 資料表 查詢"
+        >
+          <div class="article-top db-bg">
+            <span>資料管理</span>
+            <b>▤</b>
+          </div>
+
+          <div class="article-body">
+            <div class="meta">資料庫 ・ 5 分鐘</div>
+
+            <h3>資料庫與 SQL 基礎</h3>
+
+            <p>
+              從資料表、欄位與紀錄開始，認識 SQL 如何新增、查詢與管理資料。
+            </p>
+
+            <a href="database.html">
+              閱讀文章 <span>→</span>
+            </a>
+          </div>
+        </article>
+
+      </div>
+
+      <div class="empty-state" id="emptyState" hidden>
+        找不到符合的文章，試試其他關鍵字吧！
+      </div>
+
     </section>
 
-    <section class="about" id="about"><div class="about-icon">✿</div><div><span class="section-kicker">ABOUT THIS HUB</span><h2>讓知識不只是看過，<br>而是真的留下來。</h2><p>這是一個持續更新的個人學習整理空間。透過一致的分類與文章格式，把零散的課堂內容變成容易查找、可以延伸的知識庫。</p></div></section>
+    <!-- 關於本站 -->
+    <section class="about" id="about">
+
+      <div class="about-icon">✿</div>
+
+      <div>
+        <span class="section-kicker">ABOUT THIS HUB</span>
+
+        <h2>
+          讓知識不只是看過，<br>
+          而是真的留下來。
+        </h2>
+
+        <p>
+          這是一個持續更新的個人學習整理空間。透過一致的分類與文章格式，把零散的課堂內容變成容易查找、可以延伸的知識庫。
+        </p>
+      </div>
+
+    </section>
+
   </main>
 
-  <footer><a class="brand footer-brand" href="index.html"><span class="brand-mark">✦</span><span>學習補給站<small>BUSINESS & AI LEARNING HUB</small></span></a><span>用自己的步調，慢慢累積知識。 © 2026</span></footer>
+  <!-- 頁尾 -->
+  <footer>
+
+    <a class="brand footer-brand" href="index.html">
+      <span class="brand-mark">✦</span>
+
+      <span>
+        學習補給站
+        <small>BUSINESS & AI LEARNING HUB</small>
+      </span>
+    </a>
+
+    <span>
+      用自己的步調，慢慢累積知識。 © 2026
+    </span>
+
+  </footer>
+
   <script src="script.js"></script>
+
 </body>
 </html>
